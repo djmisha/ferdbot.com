@@ -1,4 +1,4 @@
-# Events Website 
+# Ferdbot.com 
 
 DevOps: Auto deployed from `master` branch on Netfily
 
