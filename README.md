@@ -1,6 +1,6 @@
 # Ferdbot.com 
 
-DevOps: Auto deployed from `master` branch on Netfily
+DevOps: Auto deployed from `main` branch on Netfily
 
 ## live-reload-vanilla-website-template
 
