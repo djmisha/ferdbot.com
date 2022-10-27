@@ -25,9 +25,13 @@ footer {
   margin: 0 auto;
 }
 
+article {
+  min-height: 100vh;
+}
+
 #masthead {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,9 +72,7 @@ footer {
 
     @include media($tablet) {
       font-size: 1.2em;
-
     }
-
   }
 }
 
@@ -84,18 +86,16 @@ iframe {
   max-width: 100%;
 }
 
-
 .insta-feed {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-
 footer {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,8 +122,6 @@ footer {
     }
   }
 }
-
-
 
 .igfeed {
   a.eapps-link {

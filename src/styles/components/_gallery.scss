@@ -1,0 +1,35 @@
+.gallery {
+  column-count: 4;
+  column-gap: 10px;
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  figure {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+  }
+
+  figure > img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+  }
+}
+
+.gallery-button {
+  font-family: 'Poppins', 'Verdana', 'Arial', sanserif;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 12px 32px;
+  background-color: transparent;
+  border: 2px solid #ca0a61;
+  color: #ca0a61;
+  border-radius: 4px;
+  font-size: 16px;
+}

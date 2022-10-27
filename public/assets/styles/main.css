@@ -28,9 +28,13 @@ footer {
   margin: 0 auto;
 }
 
+article {
+  min-height: 100vh;
+}
+
 #masthead {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,7 +89,7 @@ iframe {
 }
 
 .insta-feed {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,7 +97,7 @@ iframe {
 
 footer {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,4 +127,37 @@ footer ul li span {
   left: -9999px !important;
   top: -9999px !important;
   opacity: 0;
+}
+
+.gallery {
+  column-count: 4;
+  column-gap: 10px;
+}
+.gallery img {
+  max-width: 100%;
+  display: block;
+}
+.gallery figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+.gallery figure > img {
+  grid-row: 1/-1;
+  grid-column: 1;
+}
+
+.gallery-button {
+  font-family: "Poppins", "Verdana", "Arial", sanserif;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 12px 32px;
+  background-color: transparent;
+  border: 2px solid #ca0a61;
+  color: #ca0a61;
+  border-radius: 4px;
+  font-size: 16px;
 }
