@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _rem
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/**\r\n * Remove IG Plugin Singnature button\r\n */\nconst removeIG = () => {\n  const button = document.querySelector('a.eapps-link');\n  button.remove();\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (removeIG);\n\n//# sourceURL=webpack://live-reload-vanilla-website-template/./src/scripts/removeIG.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/**\r\n * Remove IG Plugin Singnature button\r\n */\nconst removeIG = () => {\n  const button = document.querySelector('a.eapps-link');\n  button.remove();\n  removeIfOverQuota();\n};\n\nconst removeIfOverQuota = () => {\n  const feed = document.querySelector('.insta-feed');\n  const errors = document.querySelectorAll('.insta-feed a');\n  const disabled = 'Widget is deactivated';\n\n  if (errors) {\n    for (let i = 0; i < errors.length; i++) {\n      const element = errors[i];\n\n      if (element.innerHTML.includes(disabled)) {\n        feed.remove();\n      }\n    }\n  }\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (removeIG);\n\n//# sourceURL=webpack://live-reload-vanilla-website-template/./src/scripts/removeIG.js?");
 
 /***/ }),
 
