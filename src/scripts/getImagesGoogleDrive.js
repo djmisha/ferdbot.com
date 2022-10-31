@@ -22,8 +22,8 @@ const getImagesGoogleDrive = () => {
 };
 
 const createGallery = data => {
-  const button = document.querySelector('.gallery-button');
   let counter = 12;
+  const button = document.querySelector('.gallery-button');
 
   // increment counter on button click
   button.addEventListener('click', () => {
@@ -39,6 +39,7 @@ const createGallery = data => {
   });
 
   renderImages(data, 0, counter);
+  removeLoader();
 };
 
 const renderImages = (data, startingCount, endingCount) => {
@@ -65,6 +66,13 @@ const buildImageMarkup = (gallery, id) => {
   link.appendChild(image);
   element.appendChild(link);
   gallery.appendChild(element);
+};
+
+const removeLoader = () => {
+  const loading = document.querySelector('.loading');
+  if (loading) {
+    loading.remove();
+  }
 };
 
 export default getImagesGoogleDrive;

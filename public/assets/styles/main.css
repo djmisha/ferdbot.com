@@ -161,3 +161,14 @@ footer ul li span {
   border-radius: 4px;
   font-size: 16px;
 }
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.loading img {
+  margin: 0 auto;
+}
